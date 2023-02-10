@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS CHECKPOINT</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    @font-face {
+        font-family: JuneBug;
+        src: url('JUNEBUG.TTF');
+    }
+
+    h1 {
+        font-family: JuneBug
+    }
+    .bt{
+        font-family: JuneBug
+    }
+           
+    /* CSS RESET */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/weight.jpg');
+        /* height: 200px;; */
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        left: 20px;
+        top: 20px;
+
+    }
+     
+    .left img {
+        width: 145px;
+        /* filter: invert(100%); */
+        border-radius: 40px;
+    }
+
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 39px 410px;
+        /* border: 2px solid grey; */
+
+
+    } 
+
+    .right {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid purple; */
+        padding: 4px 5px;
+    
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 16px;
+
+    }
+
+    .navbar li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 24px 30px;
+    }
+
+    li a:hover {
+        color: bisque;
+        cursor: pointer;
+        text-decoration: underline;
+
+
+    }
+
+    .btn {
+        background-color: black;
+        margin: 12px;
+        color: white;
+        padding: 3px 4px;
+        border: 2px solid lightgreen;
+        border-radius: 9px;
+        
+    }
+
+    .btn:hover {
+        color: bisque;
+        text-decoration: underline;
+        /* To a button or any element zoom out that is enlarge when our cursor hover to it than we have to write the below syntax where inside the scale bracket the value is changeable  */
+        transform: scale(1.3);
+    }
+
+    .container {
+        /* border: 2px solid khaki; */
+        margin: 317px -28px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        font-size: small;
+
+
+    }
+
+    .form-group input {
+        text-decoration: underline;
+        text-align: center;
+        margin: 3px;
+        width: 40%;
+        border-radius: 12px;
+        padding: 5px;
+    }
+
+    .bt {
+
+        width: 196px;
+        margin: 16px 8px;
+        border: 2px solid black;
+        padding: 4px;
+    }
+
+    .bt:hover {
+        text-decoration: underline;
+        color: lightslategray;
+        cursor: pointer;
+        border-radius: 10px;
+        border-radius: 10px;
+        transform: scale(1.2);
+    }
+</style>
+
+<body>
+
+
+    <header class="header">
+
+
+        <div class="left">
+            <!-- marquee is used to float any image or gif or video in any direction -->
+            <marquee behavior="slide" direction="down">œ
+                <img src="img/good.jpg" alt="">
+
+            </marquee>
+
+        
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Equipments</a></li>
+                <li><a href="#">Diet</a></li>
+                <li><a href="#">Doubt</a></li>
+
+
+            </ul>
+
+        </div>
+        <div class="right">
+
+            <div class="topnav">
+
+                <input type="text" placeholder="Search..">
+                <button class="btn">Contact Us</button><button class="btn">My Profile</button>
+            </div>
+
+        </div>
+        <div class="container">
+            <h1> WELCOME TO BODY TEMPLE</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="D" placeholder="Enter your weight">
+                </div>
+                <button class="bt">Submit</button>
+        </div>
+
+    </header>
+</body>
+
+</html>
